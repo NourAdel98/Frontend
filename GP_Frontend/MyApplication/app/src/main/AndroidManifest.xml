@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCjvECej8uFJceLusYgULUNZREE34AWICU" />
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".request.ViewHistoryActivity"
+            android:label="History" />
+        <activity
+            android:name=".request.ViewRequestDetails"
+            android:label="" />
+        <activity
+            android:name=".disabled.DisabledSignUpActivity"
+            android:label="SignUp" />
+        <activity
+            android:name=".helper.HelperSignUpActivity"
+            android:label="SignUp" />
+        <activity
+            android:name=".request.RequestActivity"
+            android:label="Requests" />
+        <activity
+            android:name=".disabled.SupporterSignUpActivity"
+            android:label="SignUp" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:label="Forget Password" />
+        <activity
+            android:name=".GetPasswordActivity"
+            android:label="Get Password" />
+        <activity
+            android:name=".CodeActivity"
+            android:label="Code" />
+        <activity
+            android:name=".disabled.DisabledProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".disabled.SupporterProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".helper.HelperProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".disabled.WaitingAcceptActivity"
+            android:label="Waiting Acceptance" />
+        <activity
+            android:name=".disabled.DisabledHomeActivity"
+            android:label="@string/title_activity_home__page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".disabled.AboutUsActivity"
+            android:label="About Us" />
+        <activity
+            android:name=".disabled.ContactUsActivity"
+            android:label="Contact Us" />
+        <activity
+            android:name=".disabled.ComplaintActivity"
+            android:label="Complaints" />
+        <activity
+            android:name=".disabled.ContactsActivity"
+            android:label="Contacts" />
+        <activity
+            android:name=".disabled.SettingsPrefActivity"
+            android:label="Settings" />
+        <activity
+            android:name=".disabled.MailActivity"
+            android:label="Email">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="message/rfc822" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".disabled.GuidesActivity"
+            android:label="Help Center" />
+        <activity
+            android:name=".helper.HelperHomeActivity"
+            android:label="@string/title_activity_helper__home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".helper.SettingsHelperActivity"
+            android:label="@string/title_activity_settings_helper" />
+        <activity
+            android:name=".helper.HelperContactsActivity"
+            android:label="Contacts" />
+        <activity
+            android:name=".helper.HelperAboutUsActivity"
+            android:label="About Us" />
+        <activity
+            android:name=".helper.HelperContactUsActivity"
+            android:label="Contact Us" />
+        <activity
+            android:name=".helper.HelperMailActivity"
+            android:label="Email" />
+        <activity android:name=".disabled.RequestCommunication" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".helper.HelperChatActivity" />
+        <activity android:name=".helper.RequestHandleActivity" />
+        <activity android:name=".disabled.ComplaintDetailsActivity" />
+        <activity android:name=".disabled.ComplaintListActivity"></activity>
+    </application>
+
+</manifest>

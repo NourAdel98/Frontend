@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+
+        <ListPreference
+            android:defaultValue="2"
+            android:dialogTitle="@string/title_languages"
+            android:entries="@array/pref_languages"
+            android:entryValues="@array/pref_languages_values"
+            android:key="@string/key_language"
+            android:summary="@string/summary_ist_of_languages"
+            android:title="@string/title_language"
+            android:icon="@drawable/ic_language_name"/>
+
+        <Preference
+            android:key="@string/key_trusted_contacts"
+            android:title="@string/title_trusted_contacts"
+            android:icon="@drawable/ic_contacts_name"/>
+
+        <Preference
+            android:key="@string/key_location"
+            android:title="@string/title_location"
+            android:icon="@drawable/ic_location_name"/>
+
+        <Preference
+            android:key="@string/key_home"
+            android:title="@string/title_home"
+            android:icon="@drawable/ic_home_name"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
+
